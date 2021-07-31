@@ -2,6 +2,13 @@ import React from 'react';
 import './App.css';
 import { PopupButton } from '@typeform/embed-react'
 
+const MyComponent = () => {
+  return (
+    <PopupButton id="https://form.typeform.com/to/zxB5hTC5" style={{ fontSize: 20 }} className="my-button">
+      click to open form in popup
+    </PopupButton>
+  )
+}
 
 function App() {
   return (
@@ -11,6 +18,7 @@ function App() {
 
         Apply to be part of the community by filling out the form below.
       </div>
+      <MyComponent />
     </div>
   );
 }
